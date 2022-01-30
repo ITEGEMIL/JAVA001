@@ -25,7 +25,7 @@ public class Main {
         JobApplicationService jobApplicationService = new JobApplicationService();
         System.out.println(jobOfferService.getBiggestSalary(list));
         System.out.println(jobOfferService.countInCity(list, "Berlin"));
-        System.out.println(jobOfferService.getMostPopularSkill(list));
+       // System.out.println(jobOfferService.getMostPopularSkill(list));
         System.out.println(jobOfferService.getCitiesSet(list));
         System.out.println(jobOfferService.getAverageMinExp(list));
         List<JobApplication> list2 = new ArrayList();
