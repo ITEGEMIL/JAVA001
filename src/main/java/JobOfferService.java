@@ -6,12 +6,13 @@ public class JobOfferService {
     }
 
     public JobOffer getBiggestSalary(List<JobOffer> jobOffers) {
-        JobOffer maxSalaryJoboffer = null;
+        JobOffer maxSalary = null;
         for (JobOffer jobOffer : jobOffers) {
-            if (maxSalaryJoboffer == null || maxSalaryJoboffer.getOfferSalary() < jobOffer.getOfferSalary())
-                maxSalaryJoboffer = jobOffer;
+            if(maxSalary == null || maxSalary.getOfferSalary() < jobOffer.getOfferSalary()){
+                maxSalary = jobOffer;
+            }
         }
-        return maxSalaryJoboffer;
+        return maxSalary;
     }
 
     public long countInCity(List<JobOffer> jobOffers, String city) {

@@ -13,7 +13,7 @@ public class Main {
         list.add(new JobOffer("Warszawa", 9514, 9, List.of("Java", "Spring")));
         list.add(new JobOffer("Olsztyn", 9872, 5, List.of("C#", "SQL")));
         list.add(new JobOffer("Radom", 3674, 17, List.of("Java", "SQL")));
-        list.add(new JobOffer("Gdańsk", 95275, 9, List.of("PHP", "Rubby")));
+        list.add(new JobOffer("Gdańsk", 952750, 9, List.of("PHP", "Rubby")));
         list.add(new JobOffer("Berlin", 152374, 17, List.of("Java", " PASCAL")));
         list.add(new JobOffer("Mogilno", 9514, 12, List.of("Java", "Spring")));
         list.add(new JobOffer("Poznań", 9514, 12, List.of("PASCAL", "Spring")));
@@ -22,10 +22,10 @@ public class Main {
         list.add(new JobOffer("Lublin", 9514, 12, List.of(".NET", "Spring")));
 
         JobOfferService jobOfferService = new JobOfferService();
-        JobApplicationService jobApplicationService = new JobApplicationService();
+
         System.out.println(jobOfferService.getBiggestSalary(list));
         System.out.println(jobOfferService.countInCity(list, "Berlin"));
-       // System.out.println(jobOfferService.getMostPopularSkill(list));
+        System.out.println(jobOfferService.getMostPopularSkill(list));
         System.out.println(jobOfferService.getCitiesSet(list));
         System.out.println(jobOfferService.getAverageMinExp(list));
         List<JobApplication> list2 = new ArrayList();
